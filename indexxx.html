@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flexbox Project</title>
+  <!-- Bootstrap 4 CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .box {
+      background-color: #17a2b8;
+      color: white;
+      padding: 20px;
+      margin: 5px;
+      text-align: center;
+    }
+    .small-box {
+      background-color: #ffc107;
+      padding: 20px;
+      margin: 5px;
+    }
+    .grow-box {
+      background-color: #28a745;
+      padding: 20px;
+      margin: 5px;
+      flex-grow: 1;
+      color: white;
+      text-align: center;
+    }
+    .wrap-box {
+      background-color: #007bff;
+      color: white;
+      padding: 20px;
+      margin: 5px;
+    }
+    header {
+      background-color: #343a40;
+      color: white;
+      padding: 10px;
+    }
+    header .nav-link {
+      color: white;
+    }
+  </style>
+</head>
+<body class="p-3">
+
+  <!-- Header -->
+  <header class="d-flex justify-content-between align-items-center">
+    <div><strong>Logo</strong></div>
+    <nav>
+      <a href="#" class="nav-link d-inline">Home</a>
+      <a href="#" class="nav-link d-inline">About</a>
+      <a href="#" class="nav-link d-inline">Contact</a>
+    </nav>
+  </header>
+
+  <div class="mt-4">
+
+    <!-- Flex Direction -->
+    <h4>Flex Direction</h4>
+    <div class="d-flex flex-row mb-2">
+      <div class="box">Row</div>
+      <div class="box">Row</div>
+    </div>
+    <div class="d-flex flex-column mb-2">
+      <div class="box">Column</div>
+      <div class="box">Column</div>
+    </div>
+
+    <!-- Justify Content -->
+    <h4>Justify Content</h4>
+    <div class="d-flex justify-content-start mb-2">
+      <div class="box">Left</div>
+    </div>
+    <div class="d-flex justify-content-center mb-2">
+      <div class="box">Center</div>
+    </div>
+    <div class="d-flex justify-content-end mb-2">
+      <div class="box">Right</div>
+    </div>
+
+    <!-- Align Items -->
+    <h4>Align Items</h4>
+    <div class="d-flex align-items-center" style="height:100px; background:#f1f1f1;">
+      <div class="box">Center Align</div>
+    </div>
+
+    <!-- Order -->
+    <h4>Order</h4>
+    <div class="d-flex">
+      <div class="box order-3">3</div>
+      <div class="box order-2">2</div>
+      <div class="box order-1">1</div>
+    </div>
+
+    <!-- Flex Grow -->
+    <h4>Flex Grow</h4>
+    <div class="d-flex">
+      <div class="small-box">Small</div>
+      <div class="grow-box">Grow</div>
+    </div>
+
+    <!-- Flex Fill -->
+    <h4>Flex Fill</h4>
+    <div class="d-flex">
+      <div class="box flex-fill">Equal</div>
+      <div class="box flex-fill">Equal</div>
+      <div class="box flex-fill">Equal</div>
+    </div>
+
+    <!-- Flex Wrap -->
+    <h4>Flex Wrap</h4>
+    <div class="d-flex flex-wrap">
+      <div class="wrap-box">1</div>
+      <div class="wrap-box">2</div>
+      <div class="wrap-box">3</div>
+      <div class="wrap-box">4</div>
+      <div class="wrap-box">5</div>
+    </div>
+
+    <!-- Align Self -->
+    <h4>Align Self</h4>
+    <div class="d-flex" style="height:150px; background:#f1f1f1;">
+      <div class="box align-self-start">Top</div>
+      <div class="box align-self-center">Center</div>
+      <div class="box align-self-end">Bottom</div>
+    </div>
+
+    <!-- Auto Margin -->
+    <h4>Auto Margin</h4>
+    <div class="d-flex">
+      <div class="box mr-auto">Left</div>
+      <div class="box ml-auto">Right</div>
+    </div>
+
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
